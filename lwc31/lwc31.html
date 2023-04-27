@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="CALCULO IMC">
+		<div class="slds-m-arround_medium">
+			<lightning-input label="Nome" type="text" name="nome" onchange={pegaNome}> </lightning-input>
+			<lightning-input label="Peso" type="Number" name="peso" onchange={pegaPeso}></lightning-input>
+            <lightning-input label="Altura" type="Number" name="altura" onchange={pegaAltura}> </lightning-input>
+            <lightning-button variant="brand" label="calcular" onclick={imc}></lightning-button>
+            {resultado}
+		</div>
+	</lightning-card>
+</template>

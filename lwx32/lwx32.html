@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Informações">
+		<div class="slds-m-arround_medium">
+			<lightning-input label="Primeiro Nome" type="text" name="firstname" onchange={handleInputChange}> </lightning-input>
+			<lightning-input label="Sobrenome" type="text" name="lastname" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="E-mail" type="text" name="email" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Website" type="text" name="website" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Empresa" type="text" name="company" onchange={handleInputChange}> </lightning-input>
+            <lightning-input label="Receita Anual" type="Number" name="annualrevenue" onchange={handleInputChange}> </lightning-input>
+            <lightning-button variant="brand" label="mostrar" onclick={onSpread}></lightning-button>
+            
+        </div>
+	</lightning-card>
+</template>
